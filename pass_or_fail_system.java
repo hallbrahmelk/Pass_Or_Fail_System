@@ -22,60 +22,60 @@ public class pass_or_fail_system {
 		
 		
 		while (!validinput1) {
-			System.out.print("Vize notunuzu girin(Enter your Visa Grade): ");
+			System.out.print("\nVize notunuzu girin(Enter your Visa Grade): ");
 			visa = scan.nextInt();
 			try {
 				if (visa<0) {
-					System.out.println("Vize 0 dan küçük olamaz.(The Midterm grade cannot be less than zero)");
+					System.out.println("\nVize 0 dan küçük olamaz.(The Midterm grade cannot be less than zero)");
 				}else if (visa>100) {
-					System.out.println("vize 100 den büyük olamaz(The Midterm grade cannot be greater than one hundred).");
+					System.out.println("\nvize 100 den büyük olamaz(The Midterm grade cannot be greater than one hundred).");
 				}else {
 					validinput1=true;
 				}
 			} catch (InputMismatchException e) {
-				System.out.println("Hata oluştu lütfen tekrar deneyin(An error occurred, please try again).");
+				System.out.println("\nHata oluştu lütfen tekrar deneyin(An error occurred, please try again).");
 			}
 		}
 		
 		while (!validinput2) {
-			System.out.print("Final notunuzu girin(Enter your Final Grade): ");
+			System.out.print("\nFinal notunuzu girin(Enter your Final Grade): ");
 			fınal=scan.nextInt();
 			try {
 				if (fınal<0) {
-					System.out.println("Final 0 dan küçük olamaz(The Final grade cannot be less than zero).");
+					System.out.println("\nFinal 0 dan küçük olamaz(The Final grade cannot be less than zero).");
 				}else if (fınal>100) {
-					System.out.println("Final 100 den büyük olamaz(The Final grade cannot be greater than one hundred).");
+					System.out.println("\nFinal 100 den büyük olamaz(The Final grade cannot be greater than one hundred).");
 				}else {
 					validinput2=true;
 				}
 			} catch (InputMismatchException e) {
-				System.out.println("Hata oluştu lütfen tekrar deneyin(An error occurred, please try again).");
+				System.out.println("\nHata oluştu lütfen tekrar deneyin(An error occurred, please try again).");
 			}
 		}
 		
 		
 		while (!validinput3) {
-			System.out.print("Ödev notunuzu giriniz (Enter your assignment grade): ");
+			System.out.print("\nÖdev notunuzu giriniz: ");
 			homework=scan.nextInt();
 			try {
 				if (homework<0) {
-					System.out.println("Ödev 0 dan küçük olamaz(Enter your Assignment Grade).");
+					System.out.println("\nÖdev 0 dan küçük olamaz(Enter your Assignment Grade).");
 				}else if (homework>100) {
-					System.out.println("Ödev 100 den büyük olamaz(The Assignment score/grade cannot be greater than one hundred).");
+					System.out.println("\nÖdev 100 den büyük olamaz(The Assignment score/grade cannot be greater than one hundred).");
 				}else {
 					validinput3=true;
 				}
 			} catch (InputMismatchException e) {
-				System.out.println("Hata oluştu lütfen tekrar deneyin(An error occurred, please try again).");
+				System.out.println("\nHata oluştu lütfen tekrar deneyin(An error occurred, please try again).");
 			}
 		}
 		
 		double total = (visa*0.4)+ (fınal*0.5)+ (homework*0.1);
 		if (total>=50) {
-			System.out.println("Geçtiniz(Passed).");
+			System.out.println("\nGeçtiniz(Passed).");
 			System.out.println("Not ortalamanız(Your grade point average): "+total);
 		}else {
-			System.out.println("Kaldınız(You failed).");
+			System.out.println("\nKaldınız(You failed).");
 			System.out.println("Not ortalamanız(Your grade point average): "+total);
 		}
 		
@@ -83,4 +83,5 @@ public class pass_or_fail_system {
 	}
 
 }
+
 
