@@ -8,7 +8,7 @@ public class pass_or_fail_system {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.print("İsminizi girin (Enter your name): ");
-		String name = scan.next();
+		String name = scan.nextLine();
 		boolean validinput1=false;
 		boolean validinput2=false;
 		boolean validinput3=false;
