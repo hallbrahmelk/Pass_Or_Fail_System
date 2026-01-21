@@ -55,7 +55,7 @@ public class pass_or_fail_system {
 		
 		
 		while (!validinput3) {
-			System.out.print("Ödev notunuzu giriniz: ");
+			System.out.print("Ödev notunuzu giriniz (Enter your assignment grade): ");
 			homework=scan.nextInt();
 			try {
 				if (homework<0) {
